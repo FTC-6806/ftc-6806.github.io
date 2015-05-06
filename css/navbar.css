@@ -1,0 +1,30 @@
+/* Navbar - The Library
+	A library for Navbars that's *sane*, *flat*, and *customizable*. Yay!
+	BSD 3-clause licensed. Copyright 2015 Liam Marshall
+	*/
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+.navbar {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	background: #eee;
+	padding: 20px;
+}
+
+.navbar > * {
+	margin: 0 10px;
+}
+
+@media (max-width: 650px) {
+	.navbar {
+		flex-wrap: wrap;
+	}
+}
