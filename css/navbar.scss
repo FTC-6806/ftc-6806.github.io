@@ -1,3 +1,6 @@
+---
+# front matter comment to insure that Jekyll reads this
+---
 /* Navbar - The Library
 	A library for Navbars that's *sane*, *flat*, and *customizable*. Yay!
 	BSD 3-clause licensed. Copyright 2015 Liam Marshall
@@ -17,10 +20,14 @@ html {
 	width: 100%;
 	background: #eee;
 	padding: 20px;
-}
 
-.navbar > * {
-	margin: 0 10px;
+	> * {
+		margin: 0 10px;
+
+		> a {
+			color: #070707;
+		}
+	}
 }
 
 @media (max-width: 650px) {
