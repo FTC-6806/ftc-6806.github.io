@@ -1,0 +1,9 @@
+---
+# front matter to ensure Jekyll reads file
+---
+@import "colors/colors";
+
+$navbar-bgcolor: $white;
+
+@import "base";
+@import "navbar";
