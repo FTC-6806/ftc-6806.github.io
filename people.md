@@ -1,5 +1,5 @@
 ---
-template: page
+layout: page
 title: People
 permalink: /people/
 ---
