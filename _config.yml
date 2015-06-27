@@ -3,7 +3,7 @@ title: Ratchet Robotics // Team 6806 # this *only* affects the <title> with our 
 email: team6806@gmail.com
 description: >
   A FTC Robotics Team
-baseurl: "/"
+baseurl: ""
 url: "http://ftc-6806.github.io/" # the base hostname & protocol for your site
 github_username:  FTC-6806
 
