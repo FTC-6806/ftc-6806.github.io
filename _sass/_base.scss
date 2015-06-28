@@ -1,6 +1,10 @@
 $large-breakpoint: 64em;
 $medium-breakpoint: 42em;
 
+.pull-center {
+  text-align: center;
+}
+
 @mixin large {
   @media screen and (min-width: #{$large-breakpoint}) {
     @content;
@@ -137,6 +141,23 @@ a {
 
   @include small {
     font-size: 1rem;
+  }
+}
+
+.page-title {
+  margin-bottom: 2rem;
+  font-weight: bold;
+  text-align: center;
+  @include large {
+    font-size: 3.25rem;
+  }
+
+  @include medium {
+    font-size: 2.25rem;
+  }
+
+  @include small {
+    font-size: 1.75rem;
   }
 }
 
@@ -317,8 +338,8 @@ a {
 }
 
 .site-footer {
-  padding-top: 2rem;
-  margin-top: 2rem;
+  padding-top: .5rem;
+  margin-top: .5rem;
   border-top: solid 1px #eff0f1;
 
   @include large {
