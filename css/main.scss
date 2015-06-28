@@ -4,7 +4,9 @@
 @import "colors/colors";
 @import "bourbon/bourbon";
 
-$navbar-bgcolor: $white;
+@import "colors"; // bring in custom color definitions
 
 @import "base";
 @import "navbar";
+@import "people";
+@import "components/highlight";
