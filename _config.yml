@@ -7,5 +7,7 @@ baseurl: ""
 url: "http://ftc-6806.github.io/" # the base hostname & protocol for your site
 github_username:  FTC-6806
 
+permalink: /blog/:categories/:title/
+
 # Build settings
 markdown: kramdown
