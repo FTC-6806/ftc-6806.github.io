@@ -30,18 +30,19 @@ $medium-breakpoint: 42em;
 body {
   padding: 0;
   margin: 0;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
   color: #606c71;
 }
 
 a {
-  color: #1e6bb8;
+  color: darken($rr_red, 10%);
   text-decoration: none;
 
   &:hover {
     text-decoration: underline;
+    color: $rr_red;
   }
 }
 
@@ -93,7 +94,7 @@ a {
   color: #fff;
   text-align: center;
   //background-color: darken($red, 10%);
-  background-image: linear-gradient(120deg, darken($red, 10%), $black);
+  background-image: linear-gradient(120deg, $rr_red, $black);
 
   @include large {
     padding: 5rem 6rem;
@@ -109,20 +110,21 @@ a {
 }
 
 .project-name {
+  font-family: 'Shadows Into Light', cursive;
   margin-top: 0;
   margin-bottom: 0.1rem;
-  color: $orange;
+  color: lighten($orange, 10%);
 
   @include large {
-    font-size: 3.25rem;
+    font-size: 4rem;
   }
 
   @include medium {
-    font-size: 2.25rem;
+    font-size: 2.75rem;
   }
 
   @include small {
-    font-size: 1.75rem;
+    font-size: 2rem;
   }
 }
 
