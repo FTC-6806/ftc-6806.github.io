@@ -5,26 +5,23 @@ title: Blog
 
 <!-- This loops through the paginated posts -->
 {% for post in paginator.posts %}
-  <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-  <p class="author">
-    <span class="date">{{ post.date | date_to_long_string }}</span>
-  </p>
-  <div class="content">
-    {{ post.content }}
-  </div>
+  <article class="post">
+    <header class="title">
+      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    </header>
+    <section class="excerpt">
+      <p>{{ post.excerpt | remove: '<p>' | remove: '</p>' }} <a class="read-more" href="{{ post.url }}">&raquo</a></p>
+    </section>
+    <footer class="meta">
+      <span class="author">{{ post.author }}</span>
+      <time class="date" datetime="{{post.date | date: '%Y-%m-%d'}}">{{ post.date | date_to_long_string }}</time>
+    </div>
+  </section>
 {% endfor %}
 
 <!-- Pagination links -->
-<div class="pagination">
-  {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
-  {% else %}
-    <span class="previous">Previous</span>
-  {% endif %}
+<div class="pagination pull-center">
+  <a href="{{ paginator.previous_page_path }}" class="previous {%unless paginator.previous_page%}invisible{%endunless%}"><i class="fa fa-arrow-left"></i></a>
   <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
-  {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
-  {% else %}
-    <span class="next ">Next</span>
-  {% endif %}
+  <a href="{{ paginator.next_page_path }}" class="next {%unless paginator.next_page%}invisible{%endunless%}"><i class="fa fa-arrow-right"></i></a>
 </div>
