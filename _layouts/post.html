@@ -1,15 +1,15 @@
 ---
 layout: default
 ---
-<div class="post">
-
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+<article class="post main-content">
+  <header class="title">
+    <h1>{{ page.title }}</h1>
+    <section class="meta">
+      <span class="author">{{ page.author }}</span>
+      <time class="date" datetime="{{page.date | date: '%Y-%m-%d'}}">{{ page.date | date_to_long_string }}</time>
+    </div>
   </header>
-
-  <article class="post-content">
+  <section class="post-content">
     {{ content }}
   </article>
-
 </div>
