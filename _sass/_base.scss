@@ -5,6 +5,10 @@ $medium-breakpoint: 42em;
   text-align: center;
 }
 
+.invisible {
+  visibility: hidden;
+}
+
 @mixin large {
   @media screen and (min-width: #{$large-breakpoint}) {
     @content;
