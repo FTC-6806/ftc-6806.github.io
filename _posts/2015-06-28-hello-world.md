@@ -2,6 +2,7 @@
 layout: post
 author: Liam Marshall
 title: Hello world (how we built this website)!
+excerpt: I’m the main programmer this year for our team, and have a bunch of webdev experience, so I got to design our website this year!
 ---
 
 I'm the main programmer this year for our team, and have a bunch of webdev experience, so I got to design our website this year!
