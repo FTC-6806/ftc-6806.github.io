@@ -1,13 +1,14 @@
 ---
 # front matter to ensure Jekyll reads file
 ---
-@import "colors/colors";
-@import "bourbon/bourbon";
 
-@import "colors"; // bring in custom color definitions
+@import 'colors/colors';
+@import 'bourbon/bourbon';
 
-@import "base";
-@import "navbar";
-@import "people";
-@import "blog";
-@import "components/highlight";
+@import 'colors'; // bring in custom color definitions
+
+@import 'base';
+@import 'navbar';
+@import 'people';
+@import 'blog';
+@import 'components/highlight';
