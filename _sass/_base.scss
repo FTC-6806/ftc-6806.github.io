@@ -1,5 +1,6 @@
 $large-breakpoint: 64em;
 $medium-breakpoint: 42em;
+$footer-height: 45px;
 
 .pull-center {
   text-align: center;
@@ -29,6 +30,24 @@ $medium-breakpoint: 42em;
 
 * {
   box-sizing: border-box;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: $footer-height;
+}
+
+.site-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: $footer-height;
 }
 
 body {
