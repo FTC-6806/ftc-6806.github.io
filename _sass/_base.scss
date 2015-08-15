@@ -41,12 +41,12 @@ body {
 }
 
 a {
-  color: darken($rr_red, 10%);
+  color: darken($rr-red, 10%);
   text-decoration: none;
 
   &:hover {
     text-decoration: underline;
-    color: $rr_red;
+    color: $rr-red;
   }
 }
 
@@ -97,8 +97,7 @@ a {
 .page-header {
   color: #fff;
   text-align: center;
-  //background-color: darken($red, 10%);
-  background-image: linear-gradient(120deg, $rr_red, #6a231c);
+  background-color: $rr-red;
 
   @include large {
     padding: 5rem 6rem;
@@ -118,7 +117,7 @@ a {
   font-weight: 400;
   margin-top: 0;
   margin-bottom: 0.1rem;
-  color: lighten($orange, 10%);
+  color: $white;
 
   @include large {
     font-size: 4rem;
