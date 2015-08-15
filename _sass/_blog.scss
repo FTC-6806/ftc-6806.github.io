@@ -2,6 +2,7 @@
   word-wrap: break-word;
   padding-bottom: 2rem;
   border-bottom: #EBF2F6 1px solid;
+
   .title {
     h2 {
       margin-bottom: 0.4em;
@@ -11,6 +12,7 @@
 
 .meta {
   margin-top: 1rem;
+
   .date {
     display: inline-block;
     margin-left: 8px;
@@ -20,6 +22,7 @@
     font-size: 1.3rem;
     white-space: nowrap;
   }
+
   .author {
     font-weight: 700;
   }
@@ -27,12 +30,15 @@
 
 .post {
   word-wrap: break-word;
+
   .meta {
     margin-top: 0px !important;
   }
+
   h1 {
     margin-bottom: 0px !important;
   }
+
   section.post-content {
     margin-top: 3.4rem;
   }
