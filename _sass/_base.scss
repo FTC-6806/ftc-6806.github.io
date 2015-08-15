@@ -61,17 +61,6 @@ a {
   border-radius: 0.3rem;
   transition: color 0.2s, background-color 0.2s, border-color 0.2s;
 
-  &:hover {
-    color: rgba(255, 255, 255, 0.8);
-    text-decoration: none;
-    background-color: rgba(255, 255, 255, 0.2);
-    border-color: rgba(255, 255, 255, 0.3);
-  }
-
-  + .btn {
-    margin-left: 1rem;
-  }
-
   @include large {
     padding: 0.75rem 1rem;
   }
@@ -92,10 +81,21 @@ a {
       margin-left: 0;
     }
   }
+
+  &:hover {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+
+  + .btn {
+    margin-left: 1rem;
+  }
 }
 
 .page-header {
-  color: #fff;
+  color: $white;
   text-align: center;
   background-color: $rr-red;
 
@@ -154,6 +154,7 @@ a {
   margin-bottom: 2rem;
   font-weight: bold;
   text-align: center;
+
   @include large {
     font-size: 3.25rem;
   }
@@ -168,11 +169,6 @@ a {
 }
 
 .main-content {
-
-  :first-child {
-    margin-top: 0;
-  }
-
   @include large {
     max-width: 64rem;
     padding: 2rem 6rem;
@@ -188,6 +184,10 @@ a {
   @include small {
     padding: 2rem 1rem;
     font-size: 1rem;
+  }
+
+  :first-child {
+    margin-top: 0;
   }
 
   img {
