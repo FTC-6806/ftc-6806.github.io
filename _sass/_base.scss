@@ -40,6 +40,16 @@ body {
   color: #606c71;
 }
 
+.site {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.site-content {
+  flex: 1;
+}
+
 a {
   color: darken($rr_red, 10%);
   text-decoration: none;
