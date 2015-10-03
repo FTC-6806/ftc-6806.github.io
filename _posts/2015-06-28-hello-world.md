@@ -6,7 +6,7 @@ excerpt: I’m the main programmer this year for our team, and have a bunch of w
 ---
 
 I'm the main programmer this year for our team, and have a bunch of webdev experience, so I got to design our website this year!
-By the way, [check the code out on Github](https://github.com/FTC-6806/ftc-6806.github.io) if you're interested.
+By the way, [check the code out on Github](https://github.com/ratchetrobotics/ftc-6806.github.io) if you're interested.
 
 This is a static site hosted on [Github Pages](https://pages.github.com), which is an awesome, *free* static site hosting service. Since it's static, I used another one of my favorite tools, [Jekyll](http://jekyllrb.com/). Jekyll takes in config files, html templates, and styles, and then lets you write pages and posts in Markdown that get smooshed into the HTML templates.
 
