@@ -5,8 +5,8 @@ email: team6806@gmail.com
 description: >
   A FTC Robotics Team
 baseurl: ""
-url: "http://ftc-6806.github.io/" # the base hostname & protocol for your site
-github_username:  FTC-6806
+url: "https://ratchetrobotics.github.io/" # the base hostname & protocol for your site
+github_username: ratchetrobotics
 
 permalink: "/blog/:categories/:title/"
 
