@@ -1,7 +1,7 @@
 encoding: utf-8
 # Site settings
 title: Ratchet Robotics # this *only* affects the <title> with our custom theme
-email: team6806@gmail.com
+email: ratchetrobotics@gmail.com
 description: >
   A FTC Robotics Team
 baseurl: ""
